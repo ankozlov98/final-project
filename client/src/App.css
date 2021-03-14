@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    
+  }
+  
+  .header-base {
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    
+    flex-direction: row;
+    background-color: rgba(255, 0, 0, 0.438);
+    color: azure;
+    box-shadow: 0px 5px 8px #ffffffc0
+  }
+  .header-button {
+    display: flex;
+    background-color: rgba(255, 200, 50, 0.856);
+    border: 1px solid black;
+    width: 150px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    line-height: 11.5vh;
+  }
+  .header-button:hover {
+    background-color: rgb(243, 196, 196);
+    transition-duration: 0.3s;
+    color: rgb(29, 29, 29);
+  }
+  .headerButtons {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .header-logo {
+    height: 100%;
+    font-size: 9vh;
+    line-height: 12vh;
+    padding-left: 20px;
+    background: -webkit-linear-gradient(45deg, rgb(255, 255, 255) 30%, rgb(255, 249, 172) 55%, rgb(255, 225, 128) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .pagination {
+    height: 16vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5vh;
+  }
+  .page-item {
+    display: flex;
+    line-height: 30px;
+    position: sticky;
+    color: black;
+    margin: 3px;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border: solid black 1px;
+    border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 217, 0);
+    text-decoration: none;
+  }
+  .page-item:active {
+    background-color: rgb(227, 252, 0) ;
+  }
+  
+  .page-item:hover {
+    background-color: rgb(255, 255, 193) ;
+    border: 0.5px solid rgb(51, 51, 51);
+    height: 45px;
+    line-height: 45px;
+    transition-duration: 0.5s;
+  }
+  
+  
+  body {
+    min-width: 600px; 
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background:
+    repeating-linear-gradient(45deg, rgba(255, 0, 0, 0.774) 19%, 
+    rgba(255, 254, 168, 0.726) 20%, 
+    rgba(255, 255, 255, 0.692) 49%,
+    rgba(10, 10, 10, 0.473) 50%);;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  @media (max-width: 900px) {
+  .headerButtons {
+    display:flex;
+    flex-direction: column;
+    
+  }
+  .header-button {
+    height: 33%;
+    line-height: 4vh;
+    
+  }
+  }
