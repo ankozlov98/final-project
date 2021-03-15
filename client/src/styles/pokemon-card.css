@@ -8,9 +8,9 @@
     border: 1px solid rgb(59, 59, 59);
     border-radius: 5px;
     box-shadow: -1px 10px 8px #0c0c0c;
-    width: 28%;
+    width: 22%;
     min-width: 300px;
-    height: 45vh;
+    height: 40vh;
     margin: 1%;
     margin-top: 15px;
     display: flex;
@@ -36,7 +36,7 @@
   .pokemon-card-button {
     width: 40%;
     height: 5vh;
-    margin: 1%;
+    margin: 1% auto;
     background-color: rgba(204, 204, 204, 0.911);
     font-weight: 400;
     font-size: 20px;
@@ -46,11 +46,12 @@
     transition-duration: 0.5s;
   }
   img {
-    width: 50%;
+    width: 38%;
     height: auto;
     
-    margin: 3% auto;
+    margin: 2% auto;
   }
+  
   .catch-button {
     background-color: rgba(254, 255, 188, 0.911);
   }

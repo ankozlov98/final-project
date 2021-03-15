@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 
 
-const PokemonButtonCatch = ({forButton, pokemon}) => {
+const PokemonButtonCatch = ({forButton, pokemon, collectPokemon, UploadCatchDate}) => {
 
 let status = "CATCH"
 
@@ -17,6 +17,10 @@ let status = "CATCH"
     const OnClick = (e) => {
         e.preventDefault();
         forButton(pokemon.id, true);
+        UploadCatchDate(pokemon.id, new Date())
+        pokemon.isCaught = true;
+        pokemon.date = new Date()
+        collectPokemon(pokemon);
         e.target.textContent = "CAUGHT" 
         e.target.disabled = true;
         console.log(status);

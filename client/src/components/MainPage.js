@@ -1,11 +1,11 @@
 import React from 'react';
 import '../styles/pokemon-card.css';
-import PokemonButtonCatch from './PokemonButtonCatch';
+
 import PokemonCard from './PokemonCard';
 import Pagination from './Pagination';
 
 
-const MainPage = ({pokemons, loading, forButton, pokemonsPerPage, totalPokemons, paginate}) => {
+const MainPage = ({collectPokemon, pokemons, loading, forButton, pokemonsPerPage, totalPokemons, paginate, UploadCatchDate}) => {
     
     if (loading) {
         return (
@@ -18,7 +18,14 @@ const MainPage = ({pokemons, loading, forButton, pokemonsPerPage, totalPokemons,
         <Pagination pokemonsPerPage={pokemonsPerPage}
       totalPokemons={totalPokemons}
       paginate={paginate}/>
-        <PokemonCard pokemons={pokemons} forButton={forButton}/>
+        <PokemonCard 
+        collectPokemon={collectPokemon}
+        pokemons={pokemons} forButton={forButton} collectPokemon={collectPokemon}
+        UploadCatchDate={UploadCatchDate}
+        />
+        <Pagination pokemonsPerPage={pokemonsPerPage}
+      totalPokemons={totalPokemons}
+      paginate={paginate}/>
         </>
     )
 }

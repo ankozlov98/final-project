@@ -2,7 +2,8 @@
   "pokemons": [
     {
       "name": "bulbasaur",
-      "id": 1
+      "id": 1,
+      "isCaught": true
     },
     {
       "name": "ivysaur",
@@ -12,7 +13,8 @@
     {
       "name": "venusaur",
       "id": 3,
-      "isCaught": true
+      "isCaught": true,
+      "date": "2021-03-15T20:21:30.066Z"
     },
     {
       "name": "charmander",
@@ -24,7 +26,8 @@
     },
     {
       "name": "charizard",
-      "id": 6
+      "id": 6,
+      "isCaught": true
     },
     {
       "name": "squirtle",
@@ -2885,47 +2888,22 @@
   ],
   "caughtPokemons": [
     {
-      "name": "wigglytuff",
-      "id": 40,
-      "caught": true,
-      "catchDate": "2021-03-11T15:20:18.847Z"
+      "name": "charizard",
+      "id": 6,
+      "isCaught": true,
+      "catchDate": "2021-03-15T18:58:44.977Z"
     },
     {
-      "name": "oddish",
-      "id": 43,
-      "caught": true,
-      "catchDate": "2021-03-11T15:22:39.194Z"
-    },
-    {
-      "name": "gloom",
-      "id": 44,
-      "caught": true,
-      "catchDate": "2021-03-11T15:35:40.466Z"
-    },
-    {
-      "name": "vileplume",
-      "id": 45,
-      "caught": true,
-      "catchDate": "2021-03-11T16:12:59.803Z"
-    },
-    {
-      "name": "nidoking",
-      "id": 34,
-      "caught": true,
-      "catchDate": "2021-03-11T16:29:33.449Z"
+      "name": "bulbasaur",
+      "id": 1,
+      "isCaught": true,
+      "catchDate": "2021-03-15T19:39:55.135Z"
     },
     {
       "name": "venusaur",
       "id": 3,
-      "caught": true,
-      "catchDate": "2021-03-11T17:24:04.535Z"
-    },
-    {
-      "name": "ivysaur",
-      "id": 2,
       "isCaught": true,
-      "caught": true,
-      "catchDate": "2021-03-14T22:14:09.002Z"
+      "catchDate": "2021-03-15T20:21:30.069Z"
     }
   ]
 }

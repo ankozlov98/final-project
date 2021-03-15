@@ -5,7 +5,11 @@ const htmlPlugin = new HtmlWebPackPlugin({
 });
 
 module.exports = {
-  module: {
+   output: {
+    libraryExport: 'default'
+   },
+    module: {
+
     rules: [
       {
         test: /\.js$/,
