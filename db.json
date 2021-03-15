@@ -3,18 +3,16 @@
     {
       "name": "bulbasaur",
       "id": 1,
-      "isCaught": true
+      "isCaught": true,
+      "date": "2021-03-15T22:24:07.994Z"
     },
     {
       "name": "ivysaur",
-      "id": 2,
-      "isCaught": true
+      "id": 2
     },
     {
       "name": "venusaur",
-      "id": 3,
-      "isCaught": true,
-      "date": "2021-03-15T20:21:30.066Z"
+      "id": 3
     },
     {
       "name": "charmander",
@@ -26,8 +24,7 @@
     },
     {
       "name": "charizard",
-      "id": 6,
-      "isCaught": true
+      "id": 6
     },
     {
       "name": "squirtle",
@@ -2888,22 +2885,10 @@
   ],
   "caughtPokemons": [
     {
-      "name": "charizard",
-      "id": 6,
-      "isCaught": true,
-      "catchDate": "2021-03-15T18:58:44.977Z"
-    },
-    {
       "name": "bulbasaur",
       "id": 1,
       "isCaught": true,
-      "catchDate": "2021-03-15T19:39:55.135Z"
-    },
-    {
-      "name": "venusaur",
-      "id": 3,
-      "isCaught": true,
-      "catchDate": "2021-03-15T20:21:30.069Z"
+      "date": "2021-03-15T22:24:07.997Z"
     }
   ]
 }

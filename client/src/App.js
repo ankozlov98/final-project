@@ -128,10 +128,10 @@ const pokemon2 = fetchPokemon(2)
               )}
               />
         <Route
-       path='/:id?'
+       path='/:pokemonId?'
        exact
        render={(props) => (
-        <PokemonProfile {...props} pokemons={pokemons}/>
+        <PokemonProfile {...props} fetchPokemon={fetchPokemon}/>
               )}
               />
 

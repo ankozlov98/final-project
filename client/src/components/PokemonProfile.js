@@ -1,21 +1,42 @@
-import React from 'react'
-import fetchPokemon from '../App'
+import React from 'react';
+import {useState, useEffect} from 'react';
+import Specs from './Specs';
+import  '../styles/profile.css';
 
-const PokemonProfile = (props, pokemons) => {
+const PokemonProfile = (props) => {
     
-    
+    const [pokemon, setPokemon] = useState({});
+
     const { match } = props;
     const { params } = match;
-    const { id } = params
+    const { pokemonId } = params;
+    const { fetchPokemon } = props;
+  
     
-    console.log(pokemons);
+
+    useEffect( async () => {
+            let result = await fetchPokemon(pokemonId)
+            setPokemon(result)
+        }, []);
+
+    
+        
+    const specs = pokemon;
+
     
     
+   
     
     
     return (
-        <div>
-            Pokemon {id}
+        <div className="ProfileConatiner">
+            <img className="profileImage"
+                    src={`./public/pokemons/${pokemonId}.png`} 
+                     onError={(e)=>{e.target.onerror = null; 
+                     e.target.src=`/pokemons/def-logo.png`}}
+                     alt={`it was a pokemon`} 
+                     />
+            <Specs specs={specs} />     
         </div>
     )
 }
