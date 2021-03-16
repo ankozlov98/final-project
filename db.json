@@ -8,7 +8,9 @@
     },
     {
       "name": "ivysaur",
-      "id": 2
+      "id": 2,
+      "isCaught": true,
+      "date": "2021-03-16T09:25:26.593Z"
     },
     {
       "name": "venusaur",

@@ -3,15 +3,17 @@ import React from 'react'
 
 
 const Specs = ({specs}) => {
-    let profileDate = new Date();
-    if (specs.date) {profileDate = (new Date(specs.date)).toLocaleDateString();}
+    let profileDate = "";
+    if (specs.date) {profileDate = (new Date(specs.date));
+        profileDate = profileDate.toLocaleDateString();
+    }
     
     return (
         <div>
             NAME: {specs.name}
             ID: {specs.id}
-            STATUS: {specs.isCaught ? (`THIS ONE IS TAMED ${profileDate}`  ) : "NO, IT IS FREE AS A REAL LIVING THING"}
-            
+            STATUS: {specs.isCaught ? (<h3>THIS ONE IS TAMED</h3>  ) : <h3>NO, IT IS FREE AS A BLUE-BIRD</h3>}
+            {specs.date ? "DATE" : ""} {profileDate}
         </div>
     )
 }
