@@ -31,6 +31,9 @@ module.exports = {
     open: "Chrome",
     proxy: {
       '/pokemons': 'http://localhost:5000'
+    },
+    historyApiFallback: {
+      index: 'index.html'
     }
   },
   

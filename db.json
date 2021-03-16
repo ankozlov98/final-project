@@ -14,7 +14,9 @@
     },
     {
       "name": "venusaur",
-      "id": 3
+      "id": 3,
+      "isCaught": true,
+      "date": "2021-03-16T10:53:06.992Z"
     },
     {
       "name": "charmander",
@@ -24,15 +26,21 @@
     },
     {
       "name": "charmeleon",
-      "id": 5
+      "id": 5,
+      "isCaught": true,
+      "date": "2021-03-16T11:10:07.285Z"
     },
     {
       "name": "charizard",
-      "id": 6
+      "id": 6,
+      "isCaught": true,
+      "date": "2021-03-16T11:14:41.257Z"
     },
     {
       "name": "squirtle",
-      "id": 7
+      "id": 7,
+      "isCaught": true,
+      "date": "2021-03-16T11:12:02.974Z"
     },
     {
       "name": "wartortle",
@@ -48,11 +56,15 @@
     },
     {
       "name": "metapod",
-      "id": 11
+      "id": 11,
+      "isCaught": true,
+      "date": "2021-03-16T12:03:55.956Z"
     },
     {
       "name": "butterfree",
-      "id": 12
+      "id": 12,
+      "isCaught": true,
+      "date": "2021-03-16T12:04:09.544Z"
     },
     {
       "name": "weedle",
@@ -2899,6 +2911,42 @@
       "id": 4,
       "isCaught": true,
       "date": "2021-03-16T10:34:09.581Z"
+    },
+    {
+      "name": "venusaur",
+      "id": 3,
+      "isCaught": true,
+      "date": "2021-03-16T10:53:06.994Z"
+    },
+    {
+      "name": "charmeleon",
+      "id": 5,
+      "isCaught": true,
+      "date": "2021-03-16T11:10:07.286Z"
+    },
+    {
+      "name": "squirtle",
+      "id": 7,
+      "isCaught": true,
+      "date": "2021-03-16T11:12:02.975Z"
+    },
+    {
+      "name": "charizard",
+      "id": 6,
+      "isCaught": true,
+      "date": "2021-03-16T11:14:41.257Z"
+    },
+    {
+      "name": "metapod",
+      "id": 11,
+      "isCaught": true,
+      "date": "2021-03-16T12:03:55.958Z"
+    },
+    {
+      "name": "butterfree",
+      "id": 12,
+      "isCaught": true,
+      "date": "2021-03-16T12:04:09.545Z"
     }
   ]
 }

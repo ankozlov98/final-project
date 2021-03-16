@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
-import { UploadCatchDate} from '../functions/UploadCatchDate'
+import { UploadCatchDate, changePokeState} from '../functions/Upload'
 
 
-const PokemonButtonCatch = ({forButton, pokemon, collectPokemon}) => {
+const PokemonButtonCatch = ({ pokemon, collectPokemon}) => {
 
 let status = "CATCH"
 
@@ -16,7 +16,7 @@ let status = "CATCH"
 
     const OnClick = (e) => {
         e.preventDefault();
-        forButton(pokemon.id, true);
+        changePokeState(pokemon.id, true);
         UploadCatchDate(pokemon.id, new Date())
         pokemon.isCaught = true;
         pokemon.date = new Date()

@@ -2,6 +2,7 @@ import React from 'react';
 import {useState, useEffect} from 'react';
 import Specs from './Specs';
 import  '../styles/profile.css';
+import {fetchPokemon} from '../functions/fetchFunctions'
 
 const PokemonProfile = (props) => {
     
@@ -10,7 +11,7 @@ const PokemonProfile = (props) => {
     const { match } = props;
     const { params } = match;
     const { pokemonId } = params;
-    const { fetchPokemon } = props;
+    
   
     
 

@@ -5,7 +5,7 @@ import PokemonCard from './PokemonCard';
 import Pagination from './Pagination';
 
 
-const MainPage = ({collectPokemon, pokemons, loading, forButton, pokemonsPerPage, totalPokemons, paginate, UploadCatchDate}) => {
+const MainPage = ({collectPokemon, pokemons, loading,  totalPokemons, paginate}) => {
     
     if (loading) {
         return (
@@ -15,15 +15,15 @@ const MainPage = ({collectPokemon, pokemons, loading, forButton, pokemonsPerPage
     }
     return (
         <>
-        <Pagination pokemonsPerPage={pokemonsPerPage}
+        <Pagination 
       totalPokemons={totalPokemons}
       paginate={paginate}/>
         <PokemonCard 
         collectPokemon={collectPokemon}
-        pokemons={pokemons} forButton={forButton} collectPokemon={collectPokemon}
-        UploadCatchDate={UploadCatchDate}
+        pokemons={pokemons} 
+        
         />
-        <Pagination pokemonsPerPage={pokemonsPerPage}
+        <Pagination 
       totalPokemons={totalPokemons}
       paginate={paginate}/>
         </>
