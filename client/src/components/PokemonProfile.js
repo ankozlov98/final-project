@@ -29,7 +29,7 @@ const PokemonProfile = (props) => {
     
     
     return (
-        <div className="ProfileConatiner">
+        <div className="ProfileContainer">
             <img className="profileImage"
                     src={`./public/pokemons/${pokemonId}.png`} 
                      onError={(e)=>{e.target.onerror = null; 

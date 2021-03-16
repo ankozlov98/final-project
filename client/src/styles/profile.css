@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+.ProfileContainer {
+    margin: 10% auto;
+    width: 65vw;
+    height: 45vh;
+    border: 1px solid black;
+    background-color: rgba(245, 245, 245, 0.815);
+    display: flex;
+    flex-direction: row;
+}
+
+.ProfileContainer img {
+    height: 70%;
+    width: auto;
+    margin: 5vw auto;
+    margin-left: 5vw;
+    
+}
+
+.specsContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
