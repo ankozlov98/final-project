@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import {fetchPokemon, fetchCaughtPokemons, fetchPokemons} from './functions/fetchFunctions'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import './App.css'
 import Header from './components/Header';
@@ -53,27 +54,9 @@ const App = () => {
     })
   }
 
-  function UploadCatchDate (id, date) {
-    fetch(`/pokemons/${id}`, {
-      method: 'PATCH',
-      body: JSON.stringify({ date }),
-      headers: new Headers({ 'Content-Type': 'application/json' }) 
-    })
-  }
+  
 
-  function fetchPokemons () {
-    return fetch('/pokemons')
-      .then(res => res.json())      
-  }
-  function fetchCaughtPokemons () {
-    return fetch('http://localhost:5000/caughtPokemons')
-      .then(res => res.json())      
-  }
-
-  function fetchPokemon (id) {
-    return fetch(`/pokemons/${id}`)
-      .then(res => res.json())      
-  }
+ 
 
   const collectPokemon = async (pokemon) => { 
     const res = await fetch('http://localhost:5000/caughtPokemons',
@@ -91,8 +74,7 @@ const App = () => {
 
   
 // let caughtPokemons = pokemons.filter(monster => monster.isCaught);
-const pokemon2 = fetchPokemon(2)
-  console.log(pokemon2);
+
   // let pokemonCards = caughtPokemons.map(monster => <div key={monster.id}>{monster.name}</div>)
   // let pokemonCards = pokemons.length && pokemons.map(monster => <div id={monster.id}>{monster.name}</div>)
   
@@ -115,7 +97,7 @@ const pokemon2 = fetchPokemon(2)
         totalPokemons={pokemons.length}
         collectPokemon={collectPokemon}
         paginate={paginate}
-        UploadCatchDate={UploadCatchDate}
+       
         />
         )}/>
        <Route

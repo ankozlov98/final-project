@@ -18,7 +18,9 @@
     },
     {
       "name": "charmander",
-      "id": 4
+      "id": 4,
+      "isCaught": true,
+      "date": "2021-03-16T10:34:09.579Z"
     },
     {
       "name": "charmeleon",
@@ -2891,6 +2893,12 @@
       "id": 1,
       "isCaught": true,
       "date": "2021-03-15T22:24:07.997Z"
+    },
+    {
+      "name": "charmander",
+      "id": 4,
+      "isCaught": true,
+      "date": "2021-03-16T10:34:09.581Z"
     }
   ]
 }

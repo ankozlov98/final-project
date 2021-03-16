@@ -24,7 +24,7 @@ return (
                      alt={`it was a pokemon`} 
                      />
                 </Link>
-                <PokemonButtonCatch pokemon={pokemon} forButton={forButton} collectPokemon={collectPokemon} UploadCatchDate={UploadCatchDate}/>
+                <PokemonButtonCatch pokemon={pokemon} forButton={forButton} collectPokemon={collectPokemon}/>
             </div>
         ))}
         

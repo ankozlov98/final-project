@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
+import { UploadCatchDate} from '../functions/UploadCatchDate'
 
 
-
-const PokemonButtonCatch = ({forButton, pokemon, collectPokemon, UploadCatchDate}) => {
+const PokemonButtonCatch = ({forButton, pokemon, collectPokemon}) => {
 
 let status = "CATCH"
 

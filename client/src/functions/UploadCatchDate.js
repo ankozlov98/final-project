@@ -1,4 +1,4 @@
-export default function UploadCatchDate (id, date) {
+export  function UploadCatchDate (id, date) {
     fetch(`/pokemons/${id}`, {
       method: 'PATCH',
       body: JSON.stringify({ date }),
@@ -6,3 +6,4 @@ export default function UploadCatchDate (id, date) {
     })
   }
 
+export default {UploadCatchDate}
